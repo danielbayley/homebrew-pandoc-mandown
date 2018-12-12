@@ -6,9 +6,10 @@ _[Pandoc]_ [template] and [filter]s for converting markdown to [`man` page][man]
 ---------
 Filters can be specified individually with `--lua-filter filter`, but the default _[mandown]_ filter is recommended to apply all of the filters, in appropriate order:
 
-| Filter `.lua` | Description                               |
-|:--------------|:------------------------------------------|
-| [mandown]     | Applies all filters in appropriate order. |
+| Filter `.lua` | Description                                           |
+|:--------------|:------------------------------------------------------|
+| [mandown]     | Applies all filters in appropriate order.             |
+| [code-bold]   | Render `inline` and [fenced] code blocks as **bold**. |
 
 Example
 -------
@@ -41,6 +42,9 @@ License
 [filter]:           https://pandoc.org/lua-filters
 
 [mandown]:          filters/mandown.lua
+[code-bold]:        filters/code-bold.lua
+
+[fenced]:           https://help.github.com/articles/creating-and-highlighting-code-blocks/#fenced-code-blocks
 
 [man]:              https://en.wikipedia.org/wiki/Man_page
 

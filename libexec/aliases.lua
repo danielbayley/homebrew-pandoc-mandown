@@ -1,0 +1,23 @@
+return {
+  NAME = false,
+  SYNOPSIS = { '^summary$', '^usage$' },
+  CONFIGURATION = { '^config' },
+  DESCRIPTION = {},
+  OPTIONS = { 'opts$' },
+  ['EXIT STATUS'] = { '^exit' },
+  ['RETURN VALUE'] = { '^return' },
+  ERRORS = {},
+  ENVIRONMENT = { '^env', 'variables?$' },
+  FILES = { 'files?$' },
+  VERSIONS = { 'versions?' },
+  ATTRIBUTES = { 'properties', 'props' },
+  ['CONFORMING TO'] = { '^conform', '^complian[ct]e?' },
+  NOTES = {},
+  DIAGNOSTICS = {},
+  BUGS = { '^issues$' },
+  EXAMPLE = { '^examples?' },
+  AUTHOR = { '^authors?' },
+  COPYRIGHT = { 'licen[sc]e' },
+  ['SEE ALSO'] = { '^references?$', 'refs$', '^links$', '^more', '^appendix$' },
+  COLOPHON = { 'project$', '^org' }
+}

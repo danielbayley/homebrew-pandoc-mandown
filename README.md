@@ -13,6 +13,7 @@ Filters can be specified individually with `--lua-filter filter`, but the defaul
 | [code-bold]              | Render `inline` and [fenced] code blocks as **bold**.          |
 | [refs]                   | Add [man page][man] section `(n)` references to applicable `command`s, and ensure a `SEE ALSO` section listing them. |
 | [links]                  | Underline `http` links, and ensure a `SEE ALSO` section listing all reference links.                                 |
+| [headings]               | UPPERCASE, [replace], and set the correct `##` level for headings.                                                   |
 
 ### [Metadata]
 [`--metadata`]/[`--variable`][variable]s can be passed directly on the command line, else are extracted from the markdown source as follows:
@@ -66,6 +67,8 @@ License
 [code-bold]:        filters/code-bold.lua
 [refs]:             filters/refs.lua
 [links]:            filters/links.lua
+[headings]:         filters/headings.lua
+[replace]:          libexec/aliases.lua
 
 [man]:              https://en.wikipedia.org/wiki/Man_page
 

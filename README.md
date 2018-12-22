@@ -11,6 +11,7 @@ Filters can be specified individually with `--lua-filter filter`, but the defaul
 | [mandown]                | Applies all filters in appropriate order.                      |
 | [metadata][metadata.lua] | Extract the below [metadata](#metadata) as Pandoc [variable]s. |
 | [code-bold]              | Render `inline` and [fenced] code blocks as **bold**.          |
+| [refs]                   | Add [man page][man] section `(n)` references to applicable `command`s, and ensure a `SEE ALSO` section listing them. |
 
 ### [Metadata]
 [`--metadata`]/[`--variable`][variable]s can be passed directly on the command line, else are extracted from the markdown source as follows:
@@ -62,6 +63,7 @@ License
 [mandown]:          filters/mandown.lua
 [metadata.lua]:     filters/metadata.lua
 [code-bold]:        filters/code-bold.lua
+[refs]:             filters/refs.lua
 
 [man]:              https://en.wikipedia.org/wiki/Man_page
 
